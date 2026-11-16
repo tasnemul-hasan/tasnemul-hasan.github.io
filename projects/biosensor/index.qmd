@@ -19,10 +19,6 @@ categories: ["Sensing & Diagnostics"]
 :::
 :::
 
-::: {.proj-hero}
-![Fibre-optic experimental setup](figures/fibre-setup.jpg)
-:::
-
 ## Overview
 
 A sandwich biosensor detects a target through two separate recognition events. A capture molecule fixed to the sensor surface binds the target, and a second, detection molecule binds a different site on the same target. The signal appears only when the target sits between the two, which gives high specificity and low background. This project works towards an optical RNA biosensor of this kind, with gold nanoparticles carrying the detection RNA and an optical fibre probe carrying the capture RNA.
