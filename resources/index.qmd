@@ -1,0 +1,34 @@
+---
+title: "Resources"
+description: "Curated learning playlists on programming, machine learning and vehicle engineering."
+---
+
+Curated learning playlists.
+
+## Programming & embedded systems
+
+::: {.res-grid}
+[{{< fa code >}} C Programming](https://www.youtube.com/playlist?list=PLiOa6ike4WAHH3HyPUu6pUG-r0LApvW-l)
+[{{< fa code >}} C++ Programming](https://www.youtube.com/playlist?list=PLiOa6ike4WAEnWjWsLN6FDOApS9ED6x7v)
+[{{< fa microchip >}} Arduino](https://www.youtube.com/playlist?list=PLPK2l9Knytg5s2dk8V09thBmNl2g5pRSr)
+[{{< fa microchip >}} STM32](https://youtube.com/playlist?list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3)
+[{{< fa brands python >}} Python](https://youtu.be/r-uOLxNrNk8)
+:::
+
+## Data science & machine learning
+
+::: {.res-grid}
+[{{< fa chart-line >}} Data Science](https://www.youtube.com/playlist?list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v)
+[{{< fa brain >}} Machine Learning](https://youtu.be/tPYj3fFJGjk)
+[{{< fa brain >}} TensorFlow 2.0](https://www.youtube.com/playlist?list=PL_2Oe5qPS093JwNM0b2x045F8vdXpGdOM)
+:::
+
+## Vehicle engineering
+
+::: {.res-grid}
+[{{< fa car >}} Racecar Engineering](https://www.youtube.com/playlist?list=PLDHjRPjkvx_lc0P-bSnhR05iRidPGkQzs)
+[{{< fa car >}} Car Suspension Build (MathWorks Student Competition)](https://www.mathworks.com/videos/series/student-competition-physical-modeling-training-107490.html)
+[{{< fa car >}} MATLAB Suspension Design](https://www.youtube.com/playlist?list=PLERTijJOmYrApVZqiI6gtA8hr1_6QS-cs)
+:::
+
+<!-- CAN Bus Protocol — link to be added -->

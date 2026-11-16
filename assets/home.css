@@ -1,0 +1,32 @@
+/* Homepage only (loaded from index.qmd). Every rule is scoped under .home so other pages are unaffected.
+   Colours come from the theme variables in assets/extra.css (light and dark). */
+
+.home { max-width: 44rem; margin: 0 auto; padding: 2.5rem 0 3rem; }
+@media (min-width: 992px) { .home { padding-top: 4rem; } }
+
+/* Name, descriptor and portrait */
+.home-head { display: flex; align-items: center; gap: 1.4rem; margin-bottom: 2.4rem; }
+.home-portrait { flex: none; width: 112px; height: 112px; object-fit: cover; border-radius: 50%; border: 1px solid var(--card-border); }
+@media (min-width: 700px) { .home-portrait { width: 128px; height: 128px; } }
+.home-id { min-width: 0; }
+.home .home-name { font-size: clamp(1.9rem, 1.5rem + 1.6vw, 2.6rem); line-height: 1.1; margin: 0 0 .4rem; border: 0; padding: 0; }
+.home-role { display: block; font-size: 1.02rem; color: var(--accent-2); font-weight: 600; letter-spacing: .01em; }
+
+/* Biography */
+.home-bio p { font-size: 1.1rem; line-height: 1.8; margin: 0 0 1.35rem; text-align: justify; }
+.home-bio strong { font-weight: 600; color: var(--accent); }
+
+/* Section links and contact */
+.home-links { display: flex; flex-wrap: wrap; gap: .4rem 0; margin: 2.4rem 0 1.3rem; padding-top: 1.4rem; border-top: 1px solid var(--card-border); }
+.home-links a { font-weight: 600; text-decoration: none; padding-right: 1.1rem; margin-right: 1.1rem; border-right: 1px solid var(--card-border); }
+.home-links a:last-child { border-right: 0; margin-right: 0; padding-right: 0; }
+.home-links a:hover { text-decoration: underline; }
+.home-contact-links p { display: flex; flex-wrap: wrap; gap: .9rem; margin: 0; }
+.home-contact-links a { display: inline-flex; font-size: 1.15rem; color: var(--muted); text-decoration: none; }
+.home-contact-links a:hover { color: var(--accent); }
+
+.home a:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 3px; border-radius: .3rem; }
+
+/* The page title is set in index.qmd for the browser tab and search; the visible
+   heading is the h1 inside .home-head, so hide Quarto's own title block here. */
+#quarto-document-content:has(.home-head) > #title-block-header { display: none; }

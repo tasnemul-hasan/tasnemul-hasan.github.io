@@ -1,0 +1,37 @@
+---
+title: "Teaching & Lecture Materials"
+subtitle: "System Identification, Neural Networks, Fuzzy Logic & Intelligent Modeling"
+description: "Nine graduate lectures on classical and intelligent system identification, with embedded slides and structured outlines."
+page-layout: full
+css: ../assets/teaching.css
+listing:
+  - id: lectures
+    contents: "lectures/*.qmd"
+    template: ../assets/lecture-card.ejs
+    sort: "lecture"
+    fields: [title, description, lecture, category, topics, slides-url, path]
+---
+
+::: {.teach-intro}
+This lecture collection covers classical and intelligent approaches to system identification, from mathematical modeling and nonparametric estimation to neural networks, fuzzy inference systems, and ANFIS. The materials combine theoretical foundations, worked numerical examples, MATLAB and Python implementations, and engineering applications involving fluid systems, power-system dynamics, and drone control. Each lecture has its own page with the slides embedded, a structured outline, and a link to the original presentation.
+:::
+
+<ul class="teach-stats" aria-label="Collection summary">
+  <li><strong>9</strong> Lectures</li>
+  <li><strong>5</strong> Learning themes</li>
+  <li><strong>MATLAB &amp; Python</strong> examples</li>
+</ul>
+
+## Lectures
+
+<div class="cat-filter" data-filter-bar data-target=".lec-card" role="group" aria-label="Filter lectures by topic">
+  <button class="active" data-cat="all">All lectures</button>
+  <button data-cat="sysid">Classical System Identification</button>
+  <button data-cat="nn">Neural Networks</button>
+  <button data-cat="fuzzy">Fuzzy Logic</button>
+  <button data-cat="anfis">ANFIS</button>
+  <button data-cat="apps">Engineering Applications</button>
+</div>
+
+:::{#lectures}
+:::

@@ -1,0 +1,18 @@
+```{=html}
+<div class="lec-grid list">
+<% for (const item of items) { const num = String(item.lecture).padStart(2, '0'); %>
+<article class="lec-card" data-cats="<%= item.topics || '' %>" <%= metadataAttrs(item) %>>
+  <div class="lec-card-top">
+    <span class="lec-card-num" aria-hidden="true"><%= num %></span>
+    <span class="lec-card-cat"><%= item.category %></span>
+  </div>
+  <h3><a href="<%- item.path %>"><span class="visually-hidden">Lecture <%= num %>: </span><%= item.title %></a></h3>
+  <p><%= item.description %></p>
+  <div class="lec-card-actions">
+    <a class="lec-view" href="<%- item.path %>" aria-label="View lecture <%= num %>">View lecture &rarr;</a>
+    <a class="lec-open" href="<%- item['slides-url'] %>" target="_blank" rel="noopener" aria-label="Open slides for lecture <%= num %> on Google Drive (new tab)">Open slides &nearr;</a>
+  </div>
+</article>
+<% } %>
+</div>
+```

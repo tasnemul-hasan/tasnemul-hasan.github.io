@@ -1,0 +1,47 @@
+---
+title: "Tasnemul Hasan Nehal"
+pagetitle: "Tasnemul Hasan Nehal"
+description: "Experimental engineer working on coupled physical phenomena, with research interests in reacting flows and combustion."
+page-layout: full
+css: assets/home.css
+---
+
+::: {.home}
+
+::: {.home-head}
+<img class="home-portrait" src="media/home/portrait.jpg" width="960" height="960" alt="Portrait of Tasnemul Hasan Nehal" fetchpriority="high">
+
+::: {.home-id}
+<h1 class="home-name">Tasnemul Hasan Nehal</h1>
+
+[Experimental Engineering · Multiphysics Research]{.home-role}
+:::
+:::
+
+::: {.home-bio}
+
+I am an experimental engineer at heart. I enjoy building things, testing them, understanding why they behave the way they do and using that understanding to make them better.
+
+I am particularly fascinated by **coupled physical phenomena**—how interactions between different physical processes shape the behavior of complex systems. My research has taken me across magneto-mechanical, fluid–structure, fluid–particle and optical–molecular systems, reinforcing my interest in understanding systems through both **physics and experiment**.
+
+I enjoy developing test rigs, integrating instrumentation, analyzing experimental data and relating them to the physics of the system. My academic research brought these elements together through a complete model-to-experiment workflow.
+
+This curiosity has drawn me toward **reacting flows and combustion** where flow, chemistry, heat transfer, pressure waves and structural geometry interact under highly unsteady conditions. I want to understand these interactions through rigorous experiments, diagnostics and physics-based modeling.
+
+:::
+
+<nav class="home-links" aria-label="Site sections">
+<a href="projects/index.html">Research</a>
+<a href="publications/index.html">Publications</a>
+<a href="teaching/index.html">Teaching</a>
+</nav>
+
+::: {.home-contact-links}
+[{{< fa envelope >}}<span class="visually-hidden">Email</span>](mailto:1th.nehal@gmail.com "Email")
+[{{< fa graduation-cap >}}<span class="visually-hidden">Google Scholar</span>](https://scholar.google.com/citations?user=KqVMyEYAAAAJ "Google Scholar")
+[{{< fa brands orcid >}}<span class="visually-hidden">ORCID</span>](https://orcid.org/0000-0002-7143-6907 "ORCID")
+[{{< fa brands github >}}<span class="visually-hidden">GitHub</span>](https://github.com/tasnemul-hasan "GitHub")
+[{{< fa brands linkedin >}}<span class="visually-hidden">LinkedIn</span>](https://linkedin.com/in/tasnemul-hasan "LinkedIn")
+:::
+
+:::

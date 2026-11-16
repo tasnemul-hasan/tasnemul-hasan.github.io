@@ -1,0 +1,229 @@
+---
+title: "EV Drivetrain and Battery Pack"
+description: "Battery pack, monitoring and high-voltage drivetrain work for the Circuit Maesters Formula Student AI electric race car, Bangladesh's first FS-AI team."
+order: 8
+image: "figures/pack-closeup.jpg"
+project-type: "Team project"
+categories: ["Autonomous & Intelligent Systems"]
+---
+
+::: {.project-meta}
+::: {}
+**Team**<br>Circuit Maesters, Ahsanullah University (Bangladesh)
+:::
+::: {}
+**Role**<br>Co-founder, Deputy Team Leader, Electronics Systems Leader
+:::
+::: {}
+**Vehicle**<br>Level-4 autonomous electric race car
+:::
+::: {}
+**Target**<br>Formula Student AI, Silverstone (UK)
+:::
+::: {}
+**Battery pack**<br>84S6P (504 cells)
+:::
+:::
+
+## Overview
+
+Circuit Maesters is the first Formula Student Artificial Intelligence (FS-AI) team in Bangladesh. Nehal co-founded the team to build a Level-4 autonomous electric race car, grow local expertise in electric mobility and autonomous systems, and prepare students for the Formula Student AI competition at Silverstone, UK.
+
+As Deputy Team Leader and Electronics Systems Leader, Nehal carried both the technical work and the coordination. The team brought together students from electrical, mechanical and computer engineering, and turned a student-led initiative into a structured engineering organization built around research, innovation and hands-on system development.
+
+## Objectives
+
+::: {.objectives}
+Team objectives:
+
+- Build a Level-4 autonomous electric race car.
+- Grow local expertise in electric mobility and autonomous systems.
+- Prepare students for the Formula Student AI competition at Silverstone, UK.
+:::
+
+## Individual responsibilities
+
+::: {.steps}
+::: {.step}
+**Electronics architecture**<br>Vehicle-level electronics, sensor integration, subsystem communication
+:::
+::: {.step}
+**Power systems**<br>Battery pack, monitoring, protection and testing
+:::
+::: {.step}
+**Team leadership**<br>Planning, task allocation and technical reviews across teams
+:::
+:::
+
+## Vehicle electronics architecture
+
+Nehal led the design and integration of the vehicle's electronic architecture. That began with studying modern automotive electronics and adapting them to the needs of a Formula Student electric vehicle. Reverse engineering and system-level analysis of commercial automotive electronic systems helped define the communication structure and subsystem interactions the autonomous platform needs.
+
+The result is a distributed network built on CAN bus communication. Nehal helped define the interfaces among the accumulator system, inverter, safety systems, supervisory controllers, cockpit electronics, sensor modules and external interfaces. The work produced system-level communication diagrams, subsystem specifications and an integration strategy for reliable information exchange across the vehicle.
+
+::: {.fig-grid}
+::: {.fig .narrow}
+![System-level CAN communication diagram](figures/can-architecture.jpg)
+:::
+:::
+
+## Battery pack and monitoring
+
+In the power systems division, Nehal contributed to developing and testing the electric vehicle battery pack and its monitoring infrastructure. The work covered battery management functions, instrumentation, safety monitoring and electrical protection, along with prototype development, laboratory testing and validation so that the high-voltage subsystems operate safely.
+
+### Building the pack
+
+The pack is 84S6P in total: 84 cells in series, with 6 cells in parallel at each step, for 504 cells. The cells are Molicel 21700 types held in plastic cell holders and joined with nickel strips.
+
+::: {.fig-grid}
+::: {.fig}
+![Cell holder, top view](figures/cell-array-top.jpg)
+:::
+::: {.fig}
+![Nickel strips over the cells](figures/nickel-strips-top.jpg)
+:::
+::: {.fig}
+![Nickel-stripped pack, angled view](figures/nickel-strips-angle.jpg)
+:::
+::: {.fig .wide}
+![Assembled pack, side view](figures/pack-side-view.jpg)
+:::
+:::
+
+::: {.fig-grid}
+::: {.fig}
+![Cells in the holder](figures/pack-closeup.jpg)
+:::
+::: {.fig}
+![Pack modules](figures/packs-on-floor.jpg)
+:::
+::: {.fig}
+![Pack assembly](figures/assembly-team.jpg)
+:::
+::: {.fig .narrow}
+![Stacked pack modules with sensing wires](figures/stacked-packs.jpg)
+:::
+:::
+
+### Testing and validation
+
+::: {.fig-grid}
+::: {.fig}
+![Checking the pack](figures/pack-multimeter-check.jpg)
+:::
+::: {.fig .wide}
+![Pack on the test bench with monitoring units and laptop](figures/pack-test-setup.jpg)
+:::
+:::
+
+### Monitoring and charging hardware
+
+The accumulator management system is split into a master unit (MU) and two sampling units (SU1 and SU2), shown here with an air-cooled charger.
+
+::: {.fig-grid}
+::: {.fig .narrow}
+![Charger with master and sampling units](figures/ams-and-charger.jpg)
+:::
+:::
+
+### Build and battery-management videos
+
+```{=html}
+<div class="vid-grid">
+<figure class="vid"><div class="vid-frame"><iframe src="https://www.youtube-nocookie.com/embed/jKSQhvfhkUk" title="Custom battery pack design and BMS wiring" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><figcaption>Custom battery pack design and BMS wiring · <a href="https://www.youtube.com/watch?v=jKSQhvfhkUk">Watch on YouTube</a></figcaption></figure>
+<figure class="vid"><div class="vid-frame"><iframe src="https://www.youtube-nocookie.com/embed/rT2fTR0L5yw" title="Custom battery pack assembly" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><figcaption>Custom battery pack assembly · <a href="https://www.youtube.com/watch?v=rT2fTR0L5yw">Watch on YouTube</a></figcaption></figure>
+</div>
+```
+
+```{=html}
+<div class="vid-grid">
+<figure class="vid short"><div class="vid-frame"><iframe src="https://www.youtube-nocookie.com/embed/j0iJjgzdXDs" title="Spot welding the custom battery pack" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><figcaption>Spot welding the custom battery pack · <a href="https://www.youtube.com/watch?v=j0iJjgzdXDs">Watch on YouTube</a></figcaption></figure>
+<figure class="vid short"><div class="vid-frame"><iframe src="https://www.youtube-nocookie.com/embed/PrPZFjKRQN0" title="Battery management system demo" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><figcaption>Battery management system demo · <a href="https://www.youtube.com/watch?v=PrPZFjKRQN0">Watch on YouTube</a></figcaption></figure>
+</div>
+```
+
+## High-voltage system and motor control
+
+```{=html}
+<div class="vid-grid">
+<figure class="vid"><div class="vid-frame"><iframe src="https://www.youtube-nocookie.com/embed/14rsxTsdEsM" title="Complete high-voltage setup" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><figcaption>Complete high-voltage setup · <a href="https://www.youtube.com/watch?v=14rsxTsdEsM">Watch on YouTube</a></figcaption></figure>
+<figure class="vid"><div class="vid-frame"><iframe src="https://www.youtube-nocookie.com/embed/b5_1lrCsAuY" title="High-voltage boot-up" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><figcaption>High-voltage boot-up · <a href="https://www.youtube.com/watch?v=b5_1lrCsAuY">Watch on YouTube</a></figcaption></figure>
+</div>
+```
+
+```{=html}
+<div class="vid-grid">
+<figure class="vid short"><div class="vid-frame"><iframe src="https://www.youtube-nocookie.com/embed/2HKBQqDUEpE" title="Emrax 208 MV motor control demo" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><figcaption>Emrax 208 MV motor control demo · <a href="https://www.youtube.com/watch?v=2HKBQqDUEpE">Watch on YouTube</a></figcaption></figure>
+</div>
+```
+
+## Chassis fabrication
+
+The car's tubular space-frame chassis was built in a local workshop, with the team checking the welded frame against the CAD model as it came together. The chassis was coordinated with the electronics and battery layout. The plate-cut parts for the frame are shown in the laser-cutting video below.
+
+::: {.fig-grid .two}
+::: {.fig}
+![Welded tube frame, rear view](figures/chassis-frame-long.jpg)
+:::
+::: {.fig}
+![Chassis frame, side view](figures/chassis-frame-side.jpg)
+:::
+:::
+
+::: {.fig-grid .two}
+::: {.fig}
+![Welding a chassis joint](figures/chassis-welding.jpg)
+:::
+::: {.fig}
+![Checking the frame against the CAD model](figures/chassis-cad-check.jpg)
+:::
+:::
+
+::: {.fig-grid}
+::: {.fig .wide}
+![Team with the completed chassis, 13 December 2023](figures/chassis-with-team.jpg)
+:::
+:::
+
+```{=html}
+<div class="vid-grid">
+<figure class="vid short"><div class="vid-frame"><iframe src="https://www.youtube-nocookie.com/embed/ZvCM8hh_MqI" title="Chassis laser cutting" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><figcaption>Chassis laser cutting · <a href="https://www.youtube.com/watch?v=ZvCM8hh_MqI">Watch on YouTube</a></figcaption></figure>
+</div>
+```
+
+## Progress presentation at AUST
+
+On 21 December 2023 the team presented its progress on building Bangladesh's first driverless electric vehicle to the Vice-Chancellor of Ahsanullah University of Science and Technology (AUST), the head of the Electrical and Electronic Engineering department, and the team's faculty advisors. The session showed the accumulator, motor controller, mounts and other hardware built so far.
+
+::: {.fig-grid .two}
+::: {.fig}
+![Team and faculty with the hardware](figures/aust-presentation-group.jpg)
+:::
+::: {.fig}
+![Progress presentation](figures/aust-presentation-talk.jpg)
+:::
+:::
+
+::: {.fig-grid .two}
+::: {.fig}
+![Presenting the accumulator and other components](figures/aust-funded-components.jpg)
+:::
+:::
+
+::: {.fig-grid}
+::: {.fig .wide}
+![University news announcement, 31 December 2023](figures/aust-news-screenshot.jpg)
+:::
+:::
+
+## Publications and resources
+
+[{{< fa file-pdf >}} Formula Student AI certificate](../../files/fsai/formula-student-ai-certificate.pdf){.btn .btn-outline-primary .btn-sm}
+
+::: {.proj-nav}
+[← All Research Projects](../index.qmd){.btn .btn-outline-primary .btn-sm}
+
+::: {.related}
+**Related projects** [Data-Driven Adaptive Depth Control of an Underwater Vehicle](../datadriven/index.qmd) · [Vision-Based Tracking](../vehiclechase/index.qmd)
+:::
+:::

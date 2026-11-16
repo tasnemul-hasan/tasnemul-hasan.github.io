@@ -1,0 +1,18 @@
+```{=html}
+<div class="proj-grid list">
+<% for (const item of items) { const cats = item.categories || []; %>
+<article class="proj-card" data-cats="<%= cats.join('|') %>" <%= metadataAttrs(item) %>>
+  <a class="thumb" data-fit="<%= item['image-fit'] || 'cover' %>" href="<%- item.path %>" tabindex="-1" aria-hidden="true">
+    <% if (item.image) { %><img src="<%- item.image %>" alt="" loading="lazy"><% } else { %><span class="thumb-fallback"><%= item.title %></span><% } %>
+  </a>
+  <div class="body">
+    <div class="cats"><% for (const c of cats) { %><span><%= c %></span><% } %></div>
+    <h3><a href="<%- item.path %>"><%= item.title %></a></h3>
+    <p><%= item.description %></p>
+    <% if (item['project-type'] || item['project-status']) { %><div class="proj-meta-line"><%= [item['project-type'], item['project-status']].filter(Boolean).join(' · ') %></div><% } %>
+    <a class="more-link" href="<%- item.path %>">View project →</a>
+  </div>
+</article>
+<% } %>
+</div>
+```

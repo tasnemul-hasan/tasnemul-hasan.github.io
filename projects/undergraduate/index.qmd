@@ -1,0 +1,60 @@
+---
+title: "Undergraduate Projects"
+description: "A PID-stabilized Arduino drone, wireless gesture-controlled LEDs, an analog overweight alarm, a tutorial on the 4026 decade counter and 4053 multiplexer ICs, and an analog line follower robot."
+order: 9
+image: "https://img.youtube.com/vi/0sFj53kYxH0/hqdefault.jpg"
+project-type: "Undergraduate projects"
+categories: ["Experimental Systems & Dynamics"]
+---
+
+```{=html}
+<style>#title-block-header .description { display: none; }</style>
+```
+
+## PID-stabilized Arduino drone
+
+A drone built from scratch in the second year. An Arduino Nano reads an MPU-6050 and runs a PID controller that adjusts the speeds of the Emax 1400 kV motors through 20 A ESCs, keeping the drone balanced.
+
+```{=html}
+<figure class="vid solo"><div class="vid-frame"><iframe src="https://www.youtube-nocookie.com/embed/0sFj53kYxH0" title="Implementing PID Control for an Arduino-Based Drone | Flight Stabilization Project" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><figcaption>PID flight stabilization · <a href="https://www.youtube.com/watch?v=0sFj53kYxH0">Watch on YouTube</a></figcaption></figure>
+```
+
+## Wireless gesture-controlled LEDs
+
+A hands-free controller from the second year. An MPU-6050 reads hand motion, calibrated to gestures, and an nRF24L01 radio sends it to a receiver that lights the LED for each gesture.
+
+```{=html}
+<figure class="vid solo"><div class="vid-frame"><iframe src="https://www.youtube-nocookie.com/embed/4Ue-JYL8B6Y" title="Wireless Gesture-Controlled LEDs with MPU-6050 and nRF24L01 | Arduino Project" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><figcaption>Gesture-controlled LEDs · <a href="https://www.youtube.com/watch?v=4Ue-JYL8B6Y">Watch on YouTube</a></figcaption></figure>
+```
+
+## Analog overweight alarm
+
+An analog weight measuring system from the second year, second semester of my BSc. A DIY pencil-and-foil flex sensor, an LM741 comparator and a 555 timer sound a buzzer when the weight exceeds a set limit.
+
+```{=html}
+<figure class="vid solo"><div class="vid-frame"><iframe src="https://www.youtube-nocookie.com/embed/jDCNBo2pa-c" title="Analog overweight alarm with a DIY flex sensor, LM741 and 555 timer" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><figcaption>Analog overweight alarm · <a href="https://www.youtube.com/watch?v=jDCNBo2pa-c">Watch on YouTube</a></figcaption></figure>
+```
+
+## 4026 decade counter and 4053 multiplexer ICs
+
+A video tutorial from the fourth year, first semester of my BSc, on the 4026 decade counter with built-in 7-segment decoder and the 4053 triple 2-channel multiplexer.
+
+```{=html}
+<figure class="vid solo"><div class="vid-frame"><iframe src="https://www.youtube-nocookie.com/embed/_fP28Cp_nOM" title="4026 decade counter and 4053 triple 2-channel multiplexer ICs" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><figcaption>4026 decade counter and 4053 multiplexer · <a href="https://www.youtube.com/watch?v=_fP28Cp_nOM">Watch on YouTube</a></figcaption></figure>
+```
+
+## Analog line follower robot
+
+A first engineering project from the first year. It uses no microcontroller, only an L293D motor driver, IR sensors and a cardboard chassis.
+
+```{=html}
+<figure class="vid solo"><div class="vid-frame"><iframe src="https://www.youtube-nocookie.com/embed/DlEZyjpzruI" title="Analog Line Follower Robot" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><figcaption>Analog line follower robot · <a href="https://www.youtube.com/watch?v=DlEZyjpzruI">Watch on YouTube</a></figcaption></figure>
+```
+
+::: {.proj-nav}
+[← All Research Projects](../index.qmd){.btn .btn-outline-primary .btn-sm}
+
+::: {.related}
+**Related projects** [Magnetic Levitation System](../maglev/index.qmd) · [Real-Time Rotor Dynamics](../realtime/index.qmd)
+:::
+:::

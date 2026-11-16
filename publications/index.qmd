@@ -1,0 +1,104 @@
+---
+title: "Publications"
+description: "Journal articles, conference papers and preprints."
+---
+
+Also on [Google Scholar](http://scholar.google.com/citations?user=KqVMyEYAAAAJ) and [ORCID](http://orcid.org/0000-0002-7143-6907).
+
+## Overview
+
+::: {.viz-two}
+<div data-viz="pubs"></div>
+<div data-viz="network"></div>
+:::
+
+## Journal and conference papers
+
+```{=html}
+<div class="pub-filters" role="group" aria-label="Filter publications">
+  <button class="active" data-type="all">All (7)</button>
+  <button data-type="journal">Journal (4)</button>
+  <button data-type="conference">Conference (3)</button>
+</div>
+<div class="pub-list">
+<div class="pub" data-type="journal">
+  <div class="yr">2026</div>
+  <div>
+    <div class="ttl">Vibration Analysis of a Soft Hydrodynamic Manipulator</div>
+    <div class="au">S. J. Maliha, <b>T. H. Nehal</b>, S. Ahmed, M. H. Hasan</div>
+    <div class="vn">Dhaka University Journal of Science, 74(1), 87–94 <span class="badge-type">Journal</span></div>
+    <div class="lk"><a href="https://doi.org/10.3329/dujs.v74i1.84350">DOI</a><a href="../projects/soft-robotics/">Soft Gripper project</a><a href="../projects/mr/">MR Fluid project</a></div>
+  </div>
+</div>
+<div class="pub" data-type="conference">
+  <div class="yr">2026</div>
+  <div>
+    <div class="ttl">COMSOL-Based Model Reference and Adaptive Depth Control of Underwater Vehicle</div>
+    <div class="au"><b>T. H. Nehal</b>, M. H. I. Nasution, S. El-Ferik</div>
+    <div class="vn">2026 IEEE 23rd Int. Multi-Conference on Systems, Signals &amp; Devices (SSD), Catania, Italy, pp. 503–508 <span class="badge-type">Conference</span></div>
+    <div class="lk"><a href="https://doi.org/10.1109/SSD69655.2026.11559081">DOI</a><a href="../projects/datadriven/">Project</a></div>
+  </div>
+</div>
+<div class="pub" data-type="conference">
+  <div class="yr">2026</div>
+  <div>
+    <div class="ttl">Real-Time Software-in-the-loop Simulation of a Magnetic Levitation System</div>
+    <div class="au"><b>T. H. Nehal</b>, S. M. Ahmad</div>
+    <div class="vn">2026 IEEE 23rd Int. Multi-Conference on Systems, Signals &amp; Devices (SSD), Catania, Italy, pp. 527–532 <span class="badge-type">Conference</span></div>
+    <div class="lk"><a href="https://doi.org/10.1109/SSD69655.2026.11559009">DOI</a><a href="../projects/maglev/">Project</a></div>
+  </div>
+</div>
+<div class="pub" data-type="journal">
+  <div class="yr">2025</div>
+  <div>
+    <div class="ttl">Advanced sensing technologies for active magnetic bearing systems: Trends and prospects</div>
+    <div class="au"><b>T. H. Nehal</b>, M. Ahmad, M. Shafiullah, A. Islam</div>
+    <div class="vn">Measurement, 118515 <span class="badge-type">Journal</span></div>
+    <div class="lk"><a href="https://doi.org/10.1016/j.measurement.2025.118515">DOI</a><a href="../projects/maglev/">Project</a></div>
+  </div>
+</div>
+<div class="pub" data-type="journal">
+  <div class="yr">2025</div>
+  <div>
+    <div class="ttl">Advancements in Optimization Techniques for Active Magnetic Bearing Systems: Current Trends and Future Directions</div>
+    <div class="au"><b>T. H. Nehal</b>, W. M. Hamanah, M. A. Abido</div>
+    <div class="vn">IEEE Access <span class="badge-type">Journal</span></div>
+    <div class="lk"><a href="https://doi.org/10.1109/ACCESS.2025.3575250">DOI</a><a href="../projects/maglev/">Project</a></div>
+  </div>
+</div>
+<div class="pub" data-type="journal">
+  <div class="yr">2025</div>
+  <div>
+    <div class="ttl">A novel ensemble learning method using majority based voting of multiple selective decision trees</div>
+    <div class="au">M. Azad, <b>T. H. Nehal</b>, M. Moshkov</div>
+    <div class="vn">Computing, 107, 42 <span class="badge-type">Journal</span></div>
+    <div class="lk"><a href="https://doi.org/10.1007/s00607-024-01394-8">DOI</a></div>
+  </div>
+</div>
+<div class="pub" data-type="conference">
+  <div class="yr">2023</div>
+  <div>
+    <div class="ttl">A Shuffling Building Block and Augmentation Parameter Tuning Techniques to Handle Small Medical Dataset</div>
+    <div class="au"><b>T. H. Nehal</b>, A. A. Khan, S. A. Shifa, L. Saiyara, U. Hossain, A. K. M. E. Islam</div>
+    <div class="vn">2023 Int. Conf. on Electrical, Computer and Communication Engineering (ECCE), Chittagong, Bangladesh <span class="badge-type">Conference</span></div>
+    <div class="lk"><a href="https://doi.org/10.1109/ECCE57851.2023.10101552">DOI</a></div>
+  </div>
+</div>
+</div>
+```
+
+## Preprints
+
+```{=html}
+<div class="preprint-list">
+<div class="pub" data-type="preprint">
+  <div class="yr">2025</div>
+  <div>
+    <div class="ttl">UAV-Based Vehicle Detection and Tracking: High-Speed Police Chase</div>
+    <div class="au"><b>T. H. Nehal</b>, et al.</div>
+    <div class="vn">Preprint, ResearchGate <span class="badge-type">Preprint</span></div>
+    <div class="lk"><a href="https://www.researchgate.net/publication/396170423_UAV-Based_Vehicle_Detection_and_Tracking_High-Speed_Vehicle_Chase">Preprint</a><a href="../projects/vehiclechase/">Project</a></div>
+  </div>
+</div>
+</div>
+```

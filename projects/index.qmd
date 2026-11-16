@@ -1,0 +1,22 @@
+---
+title: "All Research Projects"
+page-layout: full
+listing:
+  - id: all-projects
+    contents:
+      - "*/index.qmd"
+    template: ../assets/project-card.ejs
+    sort: "order"
+    fields: [title, description, image, image-fit, categories, project-type, project-status, path]
+---
+
+<div class="cat-filter" data-filter-bar data-target=".proj-card" role="group" aria-label="Filter projects by research category">
+  <button class="active" data-cat="all">All</button>
+  <button data-cat="Experimental Systems & Dynamics">Experimental Systems &amp; Dynamics</button>
+  <button data-cat="Sensing & Diagnostics">Sensing &amp; Diagnostics</button>
+  <button data-cat="Multiphysics & Smart Materials">Multiphysics &amp; Smart Materials</button>
+  <button data-cat="Autonomous & Intelligent Systems">Autonomous &amp; Intelligent Systems</button>
+</div>
+
+:::{#all-projects}
+:::

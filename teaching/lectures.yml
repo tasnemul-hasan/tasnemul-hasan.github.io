@@ -1,0 +1,330 @@
+# Canonical source for the Teaching section.
+# Edit this file, then run:  python teaching/build_lectures.py
+# The script regenerates teaching/lectures/*.qmd and checks the data.
+#
+# slides-id : the Google Drive file ID from the presentation URL. Do not alter it.
+# filters   : sysid | nn | fuzzy | anfis | apps  (used by the filter buttons on teaching/index.qmd)
+
+lectures:
+  - number: 1
+    id: SysID_Fundamentals
+    slug: 01-sysid-fundamentals
+    title: "Fundamentals of System Identification"
+    category: "Classical System Identification"
+    filters: [sysid]
+    slides-id: 1G5gOl_d6-LRqTyduFOVMyBi5H-cvSh_O
+    summary: >-
+      Introduces model-based design and the system identification workflow, from black-box and
+      white-box modeling through nonparametric and ARX estimation, with bias and consistency
+      analysis and a gas furnace case study.
+    outline:
+      - heading: "Modeling foundations"
+        items:
+          - "Model-based design and essential model features"
+          - "Mathematical representation of dynamic systems"
+          - "Black-box versus white-box modeling"
+      - heading: "Identification workflow"
+        items:
+          - "The complete system identification workflow"
+          - "Curve fitting versus system identification"
+          - "Water tank and practical engineering examples"
+          - "Frequency-response and nonlinear model structures"
+      - heading: "Nonparametric methods"
+        items:
+          - "Nonparametric methods using stochastic data"
+          - "Correlation analysis and frequency-response estimation"
+      - heading: "Parametric estimation"
+        items:
+          - "Parametric ARX model estimation"
+          - "Theoretical analysis of estimator bias and consistency"
+      - heading: "Case study"
+        items:
+          - "Real gas furnace system identification case study"
+
+  - number: 2
+    id: SysID_Nonparametric
+    slug: 02-sysid-nonparametric
+    title: "Nonparametric System Identification"
+    category: "Classical System Identification"
+    filters: [sysid]
+    slides-id: 1-JFBoqauVRFOjnqzmd9pT4ySZtcKb0p8
+    summary: >-
+      Time- and frequency-domain nonparametric methods: impulse, step and correlation-based
+      estimation, empirical transfer function estimates, Welch and Bartlett spectral smoothing,
+      and FRF analysis with averaging and coherence, with MATLAB code.
+    outline:
+      - heading: "Time-domain methods"
+        items:
+          - "Time-domain identification methods"
+          - "Impulse-response estimation"
+          - "Step-response analysis"
+          - "Correlation-based estimation with white and colored inputs"
+      - heading: "Frequency-domain methods"
+        items:
+          - "Frequency-domain identification"
+          - "Frequency-response analysis"
+          - "Empirical transfer function estimation and its properties"
+      - heading: "Spectral estimation"
+        items:
+          - "Spectral estimation"
+          - "Welch and Bartlett smoothing methods"
+          - "Spectral comparison"
+      - heading: "FRF analysis and implementation"
+        items:
+          - "FRF analysis using averaging and coherence"
+          - "MATLAB implementations throughout the lecture"
+
+  - number: 3
+    id: NeuralNetworks_Fundamentals
+    slug: 03-neural-networks-fundamentals
+    title: "Fundamentals of Neural Networks"
+    category: "Neural Network Fundamentals"
+    filters: [nn]
+    slides-id: 1I0DWXM3Ez7RYq8mOD28BRd9mV7EYwyRa
+    summary: >-
+      Builds neural networks up from regression and curve fitting: layers, activation functions,
+      output nodes and loss functions, backpropagation with numerical examples, and training
+      practice with Python code.
+    outline:
+      - heading: "From regression to neural networks"
+        items:
+          - "Regression and curve fitting as introductory AI concepts"
+          - "Constructing a custom regressor"
+          - "Transition from a custom regressor to neural network architecture"
+          - "Bio-inspired intelligence"
+      - heading: "Network components"
+        items:
+          - "Neural network layers"
+          - "Activation functions"
+          - "Output node types"
+          - "Loss functions for regression and classification"
+      - heading: "Backpropagation"
+        items:
+          - "Backpropagation"
+          - "Forward pass and loss computation"
+          - "Backward pass and numerical examples"
+      - heading: "Training practice"
+        items:
+          - "Training, validation, and test datasets"
+          - "Batch size versus epoch"
+          - "Python implementation examples"
+
+  - number: 4
+    id: FuzzyLogic_Fundamentals
+    slug: 04-fuzzy-logic-fundamentals
+    title: "Fundamentals of Fuzzy Logic"
+    category: "Fuzzy Logic & Fuzzy Identification"
+    filters: [fuzzy]
+    slides-id: 1vxg00IkNzMOgDvYTROr1zfVDCDHU0kYW
+    summary: >-
+      Contrasts conventional and fuzzy control, then builds a fuzzy inference system step by
+      step: fuzzy sets, fuzzification, rule evaluation, min-max operators, defuzzification,
+      Mamdani versus Sugeno, and a MATLAB implementation.
+    outline:
+      - heading: "Fuzzy concepts"
+        items:
+          - "Conventional versus fuzzy controllers"
+          - "Classical sets versus fuzzy sets"
+          - "Fuzzy membership graphs using cold, warm, and hot examples"
+      - heading: "Fuzzy inference system"
+        items:
+          - "Construction of a fuzzy inference system"
+          - "Fuzzification"
+          - "Fuzzy rule evaluation"
+          - "Defuzzification"
+      - heading: "Operators and system types"
+        items:
+          - "Min-max fuzzy logic operators"
+          - "Defuzzification methods"
+          - "Mamdani versus Sugeno fuzzy inference systems"
+      - heading: "Implementation"
+        items:
+          - "MATLAB Fuzzy Logic Toolbox implementation"
+
+  - number: 5
+    id: NeuralNetwork_SysID_Tanks_Example
+    slug: 05-neural-network-tanks
+    title: "Neural Network System Identification: Cascaded Tanks"
+    category: "Engineering Applications"
+    filters: [nn, apps]
+    slides-id: 1qlcC6bfBgp063oPYM6ID_VmO3OyCNdMs
+    summary: >-
+      A worked example of identifying cascaded-tank dynamics with a neural network, covering
+      dataset preparation, delayed samples, preprocessing, architecture design, a worked forward
+      pass, and prediction-error training.
+    outline:
+      - heading: "System and problem"
+        items:
+          - "Neural-network-based system identification"
+          - "Cascaded tanks physical system"
+          - "Dynamic behavior and mathematical modeling"
+          - "Formulation of the identification problem"
+      - heading: "Data"
+        items:
+          - "Dataset construction"
+          - "Input-output measurements"
+          - "Delayed training samples"
+          - "Data preprocessing and standardization"
+      - heading: "Network and training"
+        items:
+          - "Neural network architecture"
+          - "Mathematical representation"
+          - "Worked forward-pass example"
+          - "Prediction error and network training"
+      - heading: "Summary"
+        items:
+          - "Complete workflow from physical system to trained neural identifier"
+
+  - number: 6
+    id: NeuralNetwork_SysID_Damping_Example
+    slug: 06-neural-network-damping
+    title: "Neural Network Parameter Identification: Power-System Damping"
+    category: "Engineering Applications"
+    filters: [nn, apps]
+    slides-id: 1s5MqQ0jNnijgL2LxGn23NnNZfQ7gbkyp
+    summary: >-
+      Moves from output prediction to parameter identification: estimating hidden damping in
+      power-system frequency dynamics with a physics-based equation and with a neural network,
+      then comparing the two approaches.
+    outline:
+      - heading: "Problem and physics"
+        items:
+          - "Output prediction versus parameter identification"
+          - "Power-system frequency dynamics"
+          - "Spinning-wheel analogy"
+          - "Renewable generation and hidden damping"
+          - "Dynamic stability analysis"
+      - heading: "Physics-based identification"
+        items:
+          - "Physics-based damping identification equation"
+          - "Worked identification example using measured data"
+          - "Limitations of analytical identification"
+      - heading: "Neural network parameter identifier"
+        items:
+          - "Neural networks as parameter identifiers"
+          - "Training sample generation"
+          - "Dataset construction"
+          - "Standardization"
+          - "Neural network architecture"
+          - "Forward-pass calculation"
+      - heading: "Results"
+        items:
+          - "Training results"
+          - "Comparison between neural identification and analytical estimation"
+
+  - number: 7
+    id: FuzzyLogic_SysID
+    slug: 07-fuzzy-logic-sysid
+    title: "Fuzzy Logic-Based System Identification"
+    category: "Fuzzy Logic & Fuzzy Identification"
+    filters: [fuzzy]
+    slides-id: 1_TZONmyIXcclO9_wu-TabGBY-ES5AzjE
+    summary: >-
+      Takagi-Sugeno fuzzy identification in eleven steps on a heated-air process, a second
+      example on power-system frequency response with weighted least squares, and a
+      nineteen-part MATLAB implementation.
+    outline:
+      - heading: "Example 1: heated-air process"
+        items:
+          - "Takagi-Sugeno system identification"
+          - "Eleven-step identification workflow using a heated-air process"
+          - "Data preparation"
+          - "Linear baseline modeling"
+          - "Fuzzy operating regions"
+          - "Fuzzy rules"
+          - "Local dynamic models"
+          - "Weighted blending"
+          - "Model validation"
+          - "Free-run versus one-step-ahead prediction"
+      - heading: "Example 2: power-system frequency response"
+        items:
+          - "Power-system frequency response"
+          - "Two-input fuzzy rule base"
+          - "Weighted least-squares estimation"
+      - heading: "MATLAB implementation"
+        items:
+          - "Nineteen-part MATLAB implementation"
+          - "Data generation"
+          - "Model estimation"
+          - "Validation metrics"
+
+  - number: 8
+    id: ANFIS_Fundamentals
+    slug: 08-anfis-fundamentals
+    title: "Fundamentals of ANFIS"
+    category: "Neuro-Fuzzy Systems"
+    filters: [anfis]
+    slides-id: 1oeaJf763eVoyUZg6fniFCuV3BH67zkkW
+    summary: >-
+      Combines fuzzy logic and neural networks: the five-layer ANFIS architecture, hybrid
+      learning with least squares and gradient steps, ANFIS for dynamic system identification,
+      and a comparison with fuzzy and neural models.
+    outline:
+      - heading: "Motivation"
+        items:
+          - "Motivation for combining fuzzy logic and neural networks"
+          - "Ball-and-beam engineering example"
+      - heading: "Fuzzy building blocks"
+        items:
+          - "Fuzzy membership functions"
+          - "Takagi-Sugeno rules"
+      - heading: "ANFIS architecture"
+        items:
+          - "Five-layer ANFIS architecture"
+          - "Worked numerical examples"
+      - heading: "How ANFIS learns"
+        items:
+          - "Least-squares estimation of consequent parameters"
+          - "Gradient-based adjustment of membership functions"
+          - "Hybrid learning"
+      - heading: "Dynamic system identification"
+        items:
+          - "ANFIS for dynamic system identification"
+          - "Rule explosion"
+          - "Grid partitioning versus clustering"
+          - "Model validation"
+      - heading: "Comparison"
+        items:
+          - "Comparison of fuzzy, neural, and ANFIS models"
+
+  - number: 9
+    id: NeuralNetwork_DroneControl_Example
+    slug: 09-neural-network-drone
+    title: "Neural Network Modeling and Drone Altitude Control"
+    category: "Engineering Applications"
+    filters: [nn, apps]
+    slides-id: 1Qyc1sjcsBacZBrpN86YU6NCyYfsxMr_Z
+    summary: >-
+      A MATLAB-Python workflow for a drone: motor and thrust-stand modeling, linear and neural
+      network models of the dynamics, and pole-placement altitude control tested for robustness,
+      delay tolerance and computing cost.
+    outline:
+      - heading: "Introduction"
+        items:
+          - "Why drone control requires a dynamic model"
+          - "MATLAB-Python integrated workflow"
+      - heading: "Part 1: MATLAB modeling"
+        items:
+          - "Electronic speed controller (ESC)"
+          - "Motor dynamics"
+          - "Runge-Kutta numerical integration"
+          - "Thrust-stand experimental data"
+          - "Hover operating point"
+      - heading: "Part 2: Python system identification"
+        items:
+          - "Training sample construction"
+          - "Linear baseline model"
+          - "Free-run model testing"
+          - "Neural network modeling"
+          - "Hidden-neuron count"
+          - "Hover coefficients"
+      - heading: "Part 3: MATLAB controller design"
+        items:
+          - "Pole-placement altitude controller"
+          - "Closed-loop performance"
+          - "Robustness to increased drone mass"
+          - "Delay tolerance"
+          - "Computational cost"
+      - heading: "Conclusion"
+        items:
+          - "Modeling and control trade-offs"

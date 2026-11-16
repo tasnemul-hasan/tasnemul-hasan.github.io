@@ -1,0 +1,85 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - 404.qmd
+    - projects/index.qmd
+    - projects/biosensor/index.qmd
+    - projects/datadriven/index.qmd
+    - projects/fsai/index.qmd
+    - projects/maglev/index.qmd
+    - projects/mr/index.qmd
+    - projects/realtime/index.qmd
+    - projects/soft-robotics/index.qmd
+    - projects/undergraduate/index.qmd
+    - projects/vehiclechase/index.qmd
+    - publications/index.qmd
+    - teaching/index.qmd
+    - teaching/lectures/*.qmd
+    - resources/index.qmd
+  resources:
+    - "files/**"
+
+website:
+  title: "Tasnemul Hasan Nehal"
+  site-url: https://tasnemul-hasan.github.io
+  description: "Research website of Tasnemul Hasan Nehal: dynamical systems, control, and physics-based modeling of coupled, unsteady phenomena."
+  favicon: media/favicon.svg
+  open-graph: true
+  twitter-card: true
+  back-to-top-navigation: true
+  bread-crumbs: false
+  page-footer:
+    background: light
+    left: "© 2026 Tasnemul Hasan Nehal"
+    center:
+      - icon: envelope
+        href: mailto:1th.nehal@gmail.com
+        aria-label: Email
+      - icon: github
+        href: https://github.com/tasnemul-hasan
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://linkedin.com/in/tasnemul-hasan
+        aria-label: LinkedIn
+    right: "Built with [Quarto](https://quarto.org)"
+  navbar:
+    pinned: true
+    search: true
+    title: "T. H. Nehal"
+    right:
+      - text: Home
+        href: index.qmd
+      - text: Research
+        href: projects/index.qmd
+      - text: Publications
+        href: publications/index.qmd
+      - text: Teaching
+        href: teaching/index.qmd
+      - text: Resources
+        href: resources/index.qmd
+      - icon: github
+        href: https://github.com/tasnemul-hasan
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://linkedin.com/in/tasnemul-hasan
+        aria-label: LinkedIn
+
+format:
+  html:
+    theme:
+      light: [flatly, styles.scss]
+      # styles-dark.scss is listed before styles.scss so that its variables take precedence in dark mode
+      dark: [darkly, styles-dark.scss, styles.scss]
+    css: assets/extra.css
+    include-in-header: assets/head.html
+    include-after-body:
+      - assets/site.js
+      - assets/viz.js
+    toc: false
+    smooth-scroll: true
+    link-external-newwindow: true
+    link-external-icon: false
+    lightbox: true
+    code-copy: true

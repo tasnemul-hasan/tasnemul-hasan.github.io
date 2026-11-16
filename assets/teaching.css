@@ -1,0 +1,78 @@
+/* Teaching section: lecture directory and lecture pages.
+   Colours come from the theme variables defined in assets/extra.css (light and dark). */
+
+/* ---------- Landing page ---------- */
+.teach-intro { max-width: 52rem; font-size: 1.02rem; line-height: 1.65; margin: .5rem 0 1rem; }
+.teach-stats { list-style: none; display: flex; flex-wrap: wrap; gap: .5rem 1.6rem; padding: .7rem 0; margin: 0 0 1.5rem;
+  border-top: 1px solid var(--card-border); border-bottom: 1px solid var(--card-border); color: var(--muted); font-size: .92rem; }
+.teach-stats strong { color: var(--accent); font-weight: 700; margin-right: .2rem; }
+
+.lec-grid { display: grid; gap: 1.1rem; grid-template-columns: 1fr; margin: 1.2rem 0 2.5rem; }
+@media (min-width: 700px)  { .lec-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1100px) { .lec-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.lec-card[hidden] { display: none; }
+
+.lec-card { display: flex; flex-direction: column; background: var(--card-bg); border: 1px solid var(--card-border);
+  border-top: 3px solid var(--accent-2); border-radius: .7rem; padding: 1.1rem 1.2rem 1rem; box-shadow: var(--shadow); min-width: 0; }
+.lec-card:focus-within, .lec-card:hover { border-color: var(--accent-2); }
+.lec-card-top { display: flex; align-items: baseline; gap: .8rem; margin-bottom: .55rem; }
+.lec-card-num { font-size: 1.9rem; line-height: 1; font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
+.lec-card-cat { font-size: .74rem; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; color: var(--accent-2); }
+.lec-card h3 { font-size: 1.08rem; line-height: 1.35; margin: 0 0 .5rem; overflow-wrap: anywhere; }
+.lec-card h3 a { color: inherit; text-decoration: none; }
+.lec-card h3 a:hover { color: var(--accent); text-decoration: underline; }
+.lec-card p { font-size: .93rem; line-height: 1.55; color: var(--muted); margin: 0 0 1rem; }
+.lec-card-actions { margin-top: auto; display: flex; flex-wrap: wrap; gap: .5rem 1.2rem; align-items: center;
+  padding-top: .7rem; border-top: 1px solid var(--card-border); font-size: .9rem; font-weight: 600; }
+.lec-card-actions a { text-decoration: none; }
+.lec-view { color: var(--accent); }
+.lec-open { color: var(--accent-2); }
+.lec-card-actions a:hover { text-decoration: underline; }
+
+/* ---------- Lecture page ---------- */
+.lec-head { margin: .5rem 0 1.4rem; }
+.lec-back { display: inline-block; font-size: .9rem; text-decoration: none; margin-bottom: 1rem; }
+.lec-back:hover { text-decoration: underline; }
+.lec-eyebrow { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .8rem; margin: 0 0 .4rem; }
+.lec-num { font-weight: 700; color: var(--accent); font-size: .95rem; letter-spacing: .02em; }
+.lec-cat { font-size: .74rem; font-weight: 600; padding: .1rem .65rem; border-radius: 999px; border: 1px solid var(--accent-2); color: var(--accent-2); }
+.lec-title { font-size: clamp(1.6rem, 1.2rem + 1.6vw, 2.2rem); line-height: 1.2; margin: 0 0 .6rem; overflow-wrap: anywhere; }
+.lec-summary { font-size: 1.05rem; line-height: 1.6; color: var(--muted); max-width: 46rem; margin: 0; }
+
+.lec-viewer { margin: 0 0 2rem; }
+.lecture-slide-container { width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border: 1px solid var(--card-border);
+  border-radius: 12px; background: var(--accent-soft); box-shadow: var(--shadow); }
+.lecture-slide-container iframe { display: block; width: 100%; height: 100%; border: 0; }
+.lec-links { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; margin-top: .8rem; font-size: .88rem; color: var(--muted); }
+
+.lec-outline { display: grid; gap: 1rem; grid-template-columns: 1fr; margin: 1rem 0 2rem; }
+@media (min-width: 700px) { .lec-outline { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.lec-group { background: var(--card-bg); border: 1px solid var(--card-border); border-left: 3px solid var(--accent-2); border-radius: .5rem; padding: .9rem 1.1rem .5rem; }
+.lec-group h3 { font-size: 1rem; margin: 0 0 .5rem; color: var(--accent); }
+.lec-group ul { padding-left: 1.1rem; margin: 0 0 .4rem; }
+.lec-group li { margin-bottom: .3rem; line-height: 1.5; }
+
+.lec-nav { display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; align-items: stretch;
+  border-top: 1px solid var(--card-border); padding-top: 1.2rem; margin: 2rem 0 1rem; }
+.lec-nav a { text-decoration: none; }
+.lec-nav .prev, .lec-nav .next { display: flex; flex-direction: column; gap: .15rem; font-size: .92rem; line-height: 1.35; }
+.lec-nav .next { text-align: right; }
+.lec-nav a span { font-size: .78rem; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; color: var(--accent-2); }
+.lec-nav .all { align-self: center; font-weight: 600; font-size: .9rem; padding: .35rem .9rem; border: 1px solid var(--card-border); border-radius: 999px; }
+.lec-nav a:hover { text-decoration: underline; }
+@media (max-width: 600px) {
+  .lec-nav { grid-template-columns: 1fr 1fr; }
+  .lec-nav .all { grid-column: 1 / -1; grid-row: 2; justify-self: center; }
+}
+
+.lec-card a:focus-visible, .lec-back:focus-visible, .lec-nav a:focus-visible, .lec-links a:focus-visible {
+  outline: 2px solid var(--accent-2); outline-offset: 2px; border-radius: .3rem;
+}
+@media (prefers-reduced-motion: reduce) {
+  .lec-card, .cat-filter button { transition: none; }
+}
+
+/* Lecture pages draw their own header; hide Quarto's duplicate title block there.
+   On the landing page the description is page metadata only (the intro paragraph covers it). */
+#quarto-content:has(.lec-head) #title-block-header { display: none; }
+#quarto-content:has(.lec-grid) #title-block-header .description { display: none; }

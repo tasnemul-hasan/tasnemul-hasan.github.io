@@ -1,0 +1,102 @@
+---
+title: "Real-Time Rotor Dynamics"
+description: "Real-time vibration acquisition, FFT and impact-hammer testing for identifying the vibration modes of a marine rotor, built on an OPAL-RT simulator."
+order: 5
+image: "https://img.youtube.com/vi/CTduo0taiu8/hqdefault.jpg"
+categories: ["Experimental Systems & Dynamics", "Sensing & Diagnostics"]
+---
+
+::: {.project-meta}
+::: {}
+**Focus**<br>Real-time vibration analysis
+:::
+::: {}
+**Subject**<br>Vibration modes of a marine rotor
+:::
+::: {}
+**Hardware**<br>OPAL-RT OP4512, SR785, ADXL335
+:::
+:::
+
+## Overview
+
+Rotating machinery fails through vibration: imbalance, misalignment, bearing stiffness and resonance at critical speeds. This project builds a real-time measurement and analysis chain for a marine rotor, with the aim of identifying its vibration modes. The chain acquires accelerometer signals on an OPAL-RT OP4512 real-time simulator, computes the spectrum live, and identifies natural frequencies and mode shapes with an impact-hammer test.
+
+## Objectives
+
+::: {.objectives}
+- Acquire accelerometer signals in real time on an OPAL-RT OP4512 simulator.
+- Compute the vibration spectrum live and compare it with an SR785 dynamic signal analyzer.
+- Identify natural frequencies, damping and mode shapes with an impact-hammer test.
+:::
+
+## Measurement chain
+
+Rotor dynamics is the study of vibration in rotating systems, including critical speeds, whirling and instabilities. Monitoring vibration in real time is the first line of defence against these problems.
+
+::: {.steps}
+::: {.step}
+**1. Sense**<br>GY-61 (ADXL335) three-axis accelerometer
+:::
+::: {.step}
+**2. Acquire**<br>OPAL-RT OP4512 reads and processes the signals in real time
+:::
+::: {.step}
+**3. Analyse**<br>Live FFT on the simulator and on an SR785 dynamic signal analyzer
+:::
+::: {.step}
+**4. Identify**<br>Impact-hammer test for natural frequencies, damping and modes
+:::
+:::
+
+### Real-time vibration acquisition
+
+The accelerometer signals are read by the simulator and shown live, so imbalance, misalignment and resonance appear as changes in the measured vibration while the rotor runs.
+
+```{=html}
+<figure class="vid solo"><div class="vid-frame"><iframe src="https://www.youtube-nocookie.com/embed/CTduo0taiu8" title="Real-Time Vibration Measurement" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><figcaption>Real-time vibration measurement · <a href="https://www.youtube.com/watch?v=CTduo0taiu8">Watch on YouTube</a></figcaption></figure>
+```
+
+### Real-time FFT
+
+An FFT is computed on each incoming frame of data, which turns the time signal into its frequency content as it arrives. In the demonstration the simulator adds frequency components to a sine input, and the SR785 analyzer shows the same spectrum.
+
+```{=html}
+<figure class="vid solo"><div class="vid-frame"><iframe src="https://www.youtube-nocookie.com/embed/vjWWo3XZ-ac" title="Real-time FFT Demonstration | Dynamic Signal Analyzer SR785 | Opal-RT 4512" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><figcaption>Real-time FFT with the SR785 and OP4512 · <a href="https://www.youtube.com/watch?v=vjWWo3XZ-ac">Watch on YouTube</a></figcaption></figure>
+```
+
+### Impact hammer test
+
+Experimental modal analysis finds the natural frequencies, damping and mode shapes of a structure. An instrumented hammer excites the structure, and the accelerometer and the SR785 analyzer record the response. Knowing the natural frequencies shows which operating speeds to avoid.
+
+```{=html}
+<figure class="vid solo"><div class="vid-frame"><iframe src="https://www.youtube-nocookie.com/embed/bheadOo6iWs" title="Real-time Impact Hammer Test Demonstration" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><figcaption>Impact hammer test · <a href="https://www.youtube.com/watch?v=bheadOo6iWs">Watch on YouTube</a></figcaption></figure>
+```
+
+## Background: real-time HIL experiment
+
+The first hands-on experiment was a DC motor hardware-in-the-loop test, run to show why real-time systems matter. A LaunchXL-F280049C board driven from Simulink in external mode streams data over USB without true real-time execution, and samples are lost as the frequency rises. In a 5-second test the number of points received against those expected was:
+
+<div class="bars">
+<div class="bar-row"><span class="bar-label">1 Hz</span><span class="bar-track"><span class="bar-fill" style="width:80%"></span></span><span class="bar-val">4 of 5 points</span></div>
+<div class="bar-row"><span class="bar-label">2 Hz</span><span class="bar-track"><span class="bar-fill" style="width:70%"></span></span><span class="bar-val">7 of 10 points</span></div>
+<div class="bar-row"><span class="bar-label">10 Hz</span><span class="bar-track"><span class="bar-fill" style="width:42%"></span></span><span class="bar-val">21 of 50 points</span></div>
+</div>
+
+An NI PCIe-6361 DAQ in connected I/O mode recorded at higher rates but has no embedded-system features. The dSPACE MicroLabBox 1202 offers both, with high-speed acquisition and no data loss, and this experience led to the real-time work above.
+
+```{=html}
+<figure class="vid solo"><div class="vid-frame"><iframe src="https://www.youtube-nocookie.com/embed/DnZLX5jQXUU" title="First Hands-On with dSPACE MicroLabBox 1202 | Real-Time HIL Testing" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><figcaption>First hands-on with the MicroLabBox 1202 · <a href="https://www.youtube.com/watch?v=DnZLX5jQXUU">Watch on YouTube</a></figcaption></figure>
+```
+
+## Publications and resources
+
+*No paper yet.*
+
+::: {.proj-nav}
+[← All Research Projects](../index.qmd){.btn .btn-outline-primary .btn-sm}
+
+::: {.related}
+**Related projects** [Magnetic Levitation System](../maglev/index.qmd) · [Sandwich Biosensor](../biosensor/index.qmd) · [Vision-Based Tracking](../vehiclechase/index.qmd) · [Undergraduate Projects](../undergraduate/index.qmd)
+:::
+:::

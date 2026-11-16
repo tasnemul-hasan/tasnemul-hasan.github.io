@@ -1,0 +1,12 @@
+/_site/
+/.quarto/
+*.pptx
+*.rds
+.Rproj.user
+
+**/*.quarto_ipynb
+
+# Full-size originals and PNG masters stay out of git (keep them on Drive / disk).
+# Web copies of figures are .jpg
+projects/*/figures/originals/
+projects/*/figures/*.png
