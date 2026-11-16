@@ -110,13 +110,13 @@ The target size is 40–50 nm. Larger values indicate aggregates (150–300 nm) 
 
 ::: {.fig-grid}
 ::: {.fig .wide}
-![Particle size characterization by DLS](figures/dls-characterization.jpg)
+![](figures/dls-characterization.jpg){fig-alt="Particle size characterization by DLS"}
 :::
 :::
 
 ::: {.fig-grid}
 ::: {.fig .wide}
-![Absorbance characterization by UV–Vis](figures/uvvis-characterization.jpg)
+![](figures/uvvis-characterization.jpg){fig-alt="Absorbance characterization by UV–Vis"}
 :::
 :::
 
@@ -154,7 +154,7 @@ Citrate competes with the oligonucleotides for the gold surface. The as-synthesi
 
 ::: {.fig-grid}
 ::: {.fig .wide}
-![Centrifugation of the nanoparticles](figures/centrifugation.jpg)
+![](figures/centrifugation.jpg){fig-alt="Centrifugation of the nanoparticles"}
 :::
 :::
 
@@ -198,13 +198,13 @@ The fibre probe is read in a reflection configuration, with a halogen light sour
 
 ::: {.fig-grid}
 ::: {.fig .wide}
-![Fibre-optic experimental setup](figures/fibre-setup.jpg)
+![](figures/fibre-setup.jpg){fig-alt="Fibre-optic experimental setup"}
 :::
 :::
 
 ::: {.fig-grid}
 ::: {.fig .wide}
-![High-resolution spectroscopy setup](figures/spectroscopy-setup.jpg)
+![](figures/spectroscopy-setup.jpg){fig-alt="High-resolution spectroscopy setup"}
 :::
 :::
 
