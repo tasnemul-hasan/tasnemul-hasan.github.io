@@ -11,7 +11,7 @@
   var PROJECTS = [
     {id:'maglev', name:'Magnetic levitation', theme:'magneto'}, {id:'mr', name:'Smart materials (MR fluid)', theme:'magneto'},
     {id:'datadriven', name:'Data-driven control', theme:'control'},
-    {id:'soft-robotics', name:'Soft robotics', theme:'fluid'}, {id:'biosensor', name:'Sandwich biosensor', theme:'optical'},
+    {id:'soft-robotics', name:'Soft robotics', theme:'fluid'}, {id:'biosensor', name:'Nanoparticle synthesis and characterization', theme:'optical'},
     {id:'vehiclechase', name:'Vision-based tracking', theme:'vision'}, {id:'realtime', name:'Real-time rotor dynamics', theme:'magneto'}, {id:'undergraduate', name:'Undergraduate projects', theme:'control'}
   ];
   var PAPERS = [

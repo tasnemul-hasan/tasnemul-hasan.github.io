@@ -236,6 +236,6 @@ The chase footage comes from public news-channel live streams, listed below.
 [← All Research Projects](../index.qmd){.btn .btn-outline-primary .btn-sm}
 
 ::: {.related}
-**Related projects** [Sandwich Biosensor](../biosensor/index.qmd) · [Real-Time Rotor Dynamics](../realtime/index.qmd) · [Data-Driven Adaptive Depth Control of an Underwater Vehicle](../datadriven/index.qmd) · [EV Drivetrain and Battery Pack](../fsai/index.qmd)
+**Related projects** [Nanoparticle Synthesis and Characterization](../biosensor/index.qmd) · [Real-Time Rotor Dynamics](../realtime/index.qmd) · [Data-Driven Adaptive Depth Control of an Underwater Vehicle](../datadriven/index.qmd) · [EV Drivetrain and Battery Pack](../fsai/index.qmd)
 :::
 :::

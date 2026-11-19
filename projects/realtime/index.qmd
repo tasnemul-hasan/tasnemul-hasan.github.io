@@ -97,6 +97,6 @@ An NI PCIe-6361 DAQ in connected I/O mode recorded at higher rates but has no em
 [← All Research Projects](../index.qmd){.btn .btn-outline-primary .btn-sm}
 
 ::: {.related}
-**Related projects** [Magnetic Levitation System](../maglev/index.qmd) · [Sandwich Biosensor](../biosensor/index.qmd) · [Vision-Based Tracking](../vehiclechase/index.qmd) · [Undergraduate Projects](../undergraduate/index.qmd)
+**Related projects** [Magnetic Levitation System](../maglev/index.qmd) · [Nanoparticle Synthesis and Characterization](../biosensor/index.qmd) · [Vision-Based Tracking](../vehiclechase/index.qmd) · [Undergraduate Projects](../undergraduate/index.qmd)
 :::
 :::

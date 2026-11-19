@@ -1,6 +1,6 @@
 ---
-title: "Sandwich Biosensor"
-description: "Gold-nanoparticle sandwich hybridization on an optical fibre probe: nanoparticle synthesis and characterization, probe chemistry, RNA conjugation and fibre-optic spectroscopy."
+title: "Nanoparticle Synthesis and Characterization"
+description: "Gold nanoparticle synthesis and characterization (DLS, UV–Vis), fibre probe functionalization, RNA conjugation and fibre-optic spectroscopy for an optical RNA biosensor."
 order: 2
 image: "figures/fibre-setup.jpg"
 image-fit: "contain"
@@ -12,7 +12,7 @@ categories: ["Sensing & Diagnostics"]
 **Focus**<br>Optical RNA biosensor
 :::
 ::: {}
-**Approach**<br>Gold nanoparticles, sandwich hybridization
+**Approach**<br>Citrate reduction, surface and RNA conjugation chemistry
 :::
 ::: {}
 **Methods**<br>UV–Vis, DLS, fibre-optic spectroscopy
@@ -21,9 +21,9 @@ categories: ["Sensing & Diagnostics"]
 
 ## Overview
 
-A sandwich biosensor detects a target through two separate recognition events. A capture molecule fixed to the sensor surface binds the target, and a second, detection molecule binds a different site on the same target. The signal appears only when the target sits between the two, which gives high specificity and low background. This project works towards an optical RNA biosensor of this kind, with gold nanoparticles carrying the detection RNA and an optical fibre probe carrying the capture RNA.
+This project is hands-on wet-lab work on the materials behind an optical RNA biosensor. Gold nanoparticles were synthesized by citrate reduction and characterized by dynamic light scattering and UV–Vis spectroscopy. An optical fibre probe was then functionalized, thiolated RNA was conjugated to the particles, and the result was recorded with fibre-optic spectroscopy. The sensor is a sandwich assay, in which the target is bound between a capture RNA on the probe and a detection RNA on the nanoparticles.
 
-The work is organised in two stages. The first prepares and verifies the nanoparticles and the probe. The second forms the sandwich on the probe and reads it out optically.
+The work has two stages. The first is preparing and verifying the nanoparticles and the probe, and the second is forming the sandwich on the probe and reading it out optically.
 
 ::: {.steps}
 ::: {.step}
