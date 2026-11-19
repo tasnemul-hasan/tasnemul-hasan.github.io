@@ -1,7 +1,7 @@
 ---
 title: "Soft Pneumatic Gripper"
 description: "A recyclable silicone gripper that bends with air pressure, built to simplify the joints and control of industrial grippers."
-order: 7
+order: 8
 image: "figures/prototype2-silicone-parts.jpg"
 project-type: "Lab project"
 project-status: "Two prototypes built"
@@ -24,10 +24,6 @@ categories: ["Multiphysics & Smart Materials"]
 ::: {}
 **Status**<br>Two prototypes built
 :::
-:::
-
-::: {.proj-hero}
-![Ecoflex-0050 silicone parts](figures/prototype2-silicone-parts.jpg)
 :::
 
 ## Overview

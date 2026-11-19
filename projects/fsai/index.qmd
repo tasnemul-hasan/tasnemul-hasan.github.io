@@ -1,7 +1,7 @@
 ---
 title: "EV Drivetrain and Battery Pack"
 description: "Battery pack, monitoring and high-voltage drivetrain work for the Circuit Maesters Formula Student AI electric race car, Bangladesh's first FS-AI team."
-order: 8
+order: 5
 image: "figures/pack-closeup.jpg"
 project-type: "Team project"
 categories: ["Autonomous & Intelligent Systems"]

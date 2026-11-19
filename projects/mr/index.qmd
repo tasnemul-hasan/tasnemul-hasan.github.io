@@ -1,7 +1,7 @@
 ---
 title: "Smart Materials (MR Fluid)"
 description: "Simulating how particle loading and magnetic field change the flow of a magnetorheological fluid, plus hands-on tests of homemade MR fluids."
-order: 5
+order: 7
 image: "figures/velocity-vf0.1-coil1e-4.jpg"
 project-type: "Simulation + lab experiment"
 categories: ["Multiphysics & Smart Materials"]
@@ -20,10 +20,6 @@ categories: ["Multiphysics & Smart Materials"]
 ::: {}
 **Samples**<br>10 µm iron particles in three carriers
 :::
-:::
-
-::: {.proj-hero}
-![COMSOL velocity field of the MR fluid mixture](figures/velocity-vf0.5-coil1e-4.jpg)
 :::
 
 ## Overview

@@ -1,7 +1,7 @@
 ---
 title: "Real-Time Rotor Dynamics"
 description: "Real-time vibration acquisition, FFT and impact-hammer testing for identifying the vibration modes of a marine rotor, built on an OPAL-RT simulator."
-order: 5
+order: 4
 image: "https://img.youtube.com/vi/CTduo0taiu8/hqdefault.jpg"
 categories: ["Experimental Systems & Dynamics", "Sensing & Diagnostics"]
 ---

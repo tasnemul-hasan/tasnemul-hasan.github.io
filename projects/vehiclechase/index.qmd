@@ -1,7 +1,7 @@
 ---
 title: "Vision-Based Tracking"
 description: "UAV-based vehicle detection and tracking in high-speed chase scenarios."
-order: 4
+order: 6
 image: "figures/aerial-footage-samples.jpg"
 project-type: "Course project"
 categories: ["Autonomous & Intelligent Systems", "Sensing & Diagnostics"]

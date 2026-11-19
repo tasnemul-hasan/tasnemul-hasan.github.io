@@ -1,7 +1,7 @@
 ---
-title: "Data-Driven Adaptive Depth Control of an Underwater Vehicle"
+title: "Data-Driven Adaptive Depth Control"
 description: "A fluid–structure simulation of buoyancy-driven motion in COMSOL, a reduced-order reference model identified from it, and an adaptive controller that estimates drag online."
-order: 6
+order: 3
 image: "figures/volume-fraction-cases.jpg"
 image-fit: "contain"
 project-type: "Conference paper"
